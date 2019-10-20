@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-tailwind-emotion-starter",
-  "description": "A simplified Tailwind + Emotion bare-bones starter for Gatsby",
-  "version": "0.2.0",
+  "name": "@pauloelias/gatsby-tailwind-emotion-starter",
+  "description": "A bare-bones Tailwind CSS + Emotion starter for Gatsby",
+  "version": "0.2.1",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
