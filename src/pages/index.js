@@ -4,15 +4,15 @@ import React from "react"
 const logos = [
   {
     name: "gatsby",
-    logo: require("../assets/gatsby.svg"),
+    logo: require("../images/gatsby.svg"),
   },
   {
     name: "tailwind",
-    logo: require("../assets/tailwind.svg"),
+    logo: require("../images/tailwind.svg"),
   },
   {
     name: "emotion",
-    logo: require("../assets/emotion.png"),
+    logo: require("../images/emotion.png"),
   },
 ]
 
