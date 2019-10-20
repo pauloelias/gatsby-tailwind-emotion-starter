@@ -13,12 +13,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
+    "@emotion/core": "^10.0.21",
+    "@emotion/styled": "^10.0.17",
     "gatsby": "^2.16.1",
+    "gatsby-plugin-emotion": "^4.1.12",
     "react": "^16.10.2",
     "react-dom": "^16.10.2"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "babel-plugin-macros": "^2.6.1",
+    "babel-preset-gatsby": "^0.2.20",
+    "prettier": "^1.18.2",
+    "tailwind.macro": "^1.0.0-alpha.10",
+    "tailwindcss": "^1.1.2"
   },
   "repository": {
     "type": "git",
