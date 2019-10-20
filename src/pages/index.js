@@ -6,7 +6,7 @@ const Wrapper = tw.div`
 `
 
 const Main = tw.div`
-  p-8 bg-gray-100 rounded-lg shadow-2xl
+  p-6 bg-gray-100 rounded-lg shadow-2xl
 `
 
 const Heading = tw.h1`
@@ -14,7 +14,7 @@ const Heading = tw.h1`
 `
 
 const Text = tw.p`
-  text-gray-800
+  text-gray-700
 `
 
 export default () => (
