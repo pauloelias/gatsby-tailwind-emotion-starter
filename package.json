@@ -1,7 +1,7 @@
 {
   "name": "@pauloelias/gatsby-tailwind-emotion-starter",
   "description": "A bare-bones Tailwind CSS + Emotion starter for Gatsby",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -17,9 +17,11 @@
     "gatsby": "^2.16.5",
     "gatsby-plugin-emotion": "^4.1.12",
     "gatsby-plugin-postcss": "^2.1.13",
+    "gatsby-plugin-react-helmet": "^3.1.13",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",
-    "react-dom": "^16.10.2"
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1"
   },
   "devDependencies": {
     "babel-preset-gatsby": "^0.2.20",

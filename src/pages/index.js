@@ -1,5 +1,6 @@
 import tw from "tailwind.macro"
 import React from "react"
+import SEO from "../components/seo"
 
 const logos = [
   {
@@ -42,6 +43,7 @@ const Icon = tw.img`
 
 export default () => (
   <Wrapper>
+    <SEO title="Home" />
     <Main>
       <Heading>Hello, world!</Heading>
       <Text>Welcome to the Gatsby Tailwind CSS + Emotion Starter.</Text>

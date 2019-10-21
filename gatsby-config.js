@@ -4,5 +4,9 @@ module.exports = {
     description: `A bare-bones Tailwind CSS + Emotion starter to kickoff your project. `,
     author: `@pauloelias`,
   },
-  plugins: [`gatsby-plugin-postcss`, `gatsby-plugin-emotion`],
+  plugins: [
+    `gatsby-plugin-postcss`,
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-react-helmet`,
+  ],
 }
