@@ -1,15 +1,13 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ece07044-6cc6-459e-808b-92485f0ba479/deploy-status)](https://app.netlify.com/sites/gatsby-tailwind-emotion-starter-demo/deploys)
 
-[![Edit @pauloelias/gatsby-tailwind-emotion-starter](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/pauloeliasgatsby-tailwind-emotion-starter-yzet0?fontsize=14)
-
 <p align="center">
   <a href="https://www.gatsbyjs.org">
     <img alt="Gatsby" src="./src/images/gatsby.svg" width="60" />
   </a>
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://tailwindcss.com">
     <img alt="Gatsby" src="./src/images/tailwind.svg" width="60" />
   </a>
-  <a href="https://www.gatsbyjs.org">
+  <a href="https://emotion.sh">
     <img alt="Gatsby" src="./src/images/emotion.png" width="60" />
   </a>
 </p>
@@ -17,7 +15,11 @@
   Tailwind + Emotion Gatsby Starter 
 </h1>
 
-Kick off your project with this bare-bones Tailwind CSS + Emotion starter for Gatsby. This starter ships with the packages and configuruation you need to get hit the ground running on your next Tailwind CSS project.
+Kick off your project with this bare-bones Tailwind CSS + Emotion starter for Gatsby. This starter ships with the packages and configuruation files you need to get hit the ground running on your next Tailwind CSS project.
+
+## 💄 Demo
+
+You can see a demo of the frontend [over yonder](https://gatsby-tailwind-emotion-starter-demo.netlify.com/).
 
 ## 🚀 Quick start
 
@@ -49,9 +51,9 @@ Kick off your project with this bare-bones Tailwind CSS + Emotion starter for Ga
 
 This starter contains has the following features enabled by default:
 
-- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components with Tailwind CSS's classes or combine Tailwind classes with your custom CSS with Emotion or CSS.
-- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom CSS or use the [`tailwind.macro`](https://github.com/bradlc/tailwind.macro) package to write your Tailwind CSS classes inside your Emotion components.
-- **PostCSS**: Use the power of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own plain-old-css. [postcss-preset-env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today! 
+- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using the `tailwind.marco` to Tailwind classes to your project.
+- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled-comppnents or use the [`tailwind.macro`](https://github.com/bradlc/tailwind.macro) package with Emotion to write your Tailwind CSS classes alongside your custom Emotion components.
+- **PostCSS**: Use the power of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own plain-old-css. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
 ## 🧐 What's inside?
 
@@ -80,7 +82,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3. **`.babelrc`**: This configuration file allows us to fine-tune [Babel's configurtion settings](https://babeljs.io/docs/en/configuration). In this starter we are adding the [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) present as well enablbig Tailwind CSS macros by enabling the [`macros` plugin](https://github.com/bradlc/babel-plugin-tailwind-components).
+3. **`.babelrc`**: This configuration file allows us to fine-tune [Babel's configurtion settings](https://babeljs.io/docs/en/configuration). In this starter we are adding the [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) preset to allow us to customize Babel as needed.
 
 4.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
@@ -88,9 +90,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 6.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-7. **`babel-plugin-macros.config.js`**: This file helps us configure Tailwind CSS macros to be used with Emotion, our CSS-in-JS tool of choice.
+7. **`babel-plugin-macros.config.js`**: This file helps us configure Tailwind CSS macros to be used with [Emotion](https://emotion.sh), our CSS-in-JS tool of choice.
 
-8.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+8.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser. By default we are injecting Tailwind's [base styles](https://tailwindcss.com/docs/adding-base-styles/#app) into the browser.
 
 9.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
@@ -104,7 +106,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 14. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-15. **`postcss.config.js`**: This configuration file allows us to customize our PostCSS settings. PostCSS is used to compile the custom css we write outside of Emotion.
+15. **`postcss.config.js`**: This configuration file allows us to customize our [PostCSS](https://postcss.org/) settings. PostCSS is used to compile the custom css we write outside of Emotion.
 
 16. **`README.md`**: A text file containing useful reference information about your project.
 
