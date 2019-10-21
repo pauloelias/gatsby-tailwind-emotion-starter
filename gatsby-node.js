@@ -5,14 +5,4 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   config.node = {
     fs: "empty",
   }
-
-  actions.setWebpackConfig({
-    devServer: {
-      disableHostCheck: true,
-      watchOptions: {
-        poll: true,
-        ignored: /node_modules/,
-      },
-    },
-  })
 }
