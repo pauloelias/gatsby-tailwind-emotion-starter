@@ -25,7 +25,7 @@ You can see a demo of the frontend [over yonder](https://gatsby-tailwind-emotion
 
 1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+    Use the Gatsby CLI to create a new site, specifying the `gatsby-tailwind-emotion-starter` starter.
 
     ```shell
     # create a new Gatsby site using the gatsby-tailwind-emotion-starter
@@ -51,9 +51,9 @@ You can see a demo of the frontend [over yonder](https://gatsby-tailwind-emotion
 
 This starter contains has the following features enabled by default:
 
-- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using the `tailwind.marco` to Tailwind classes to your project.
-- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled-comppnents or use the [`tailwind.macro`](https://github.com/bradlc/tailwind.macro) package with Emotion to write your Tailwind CSS classes alongside your custom Emotion components.
-- **PostCSS**: Use the power of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own plain-old-css. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
+- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using the `tailwind.marco` to add Tailwind classes to your project.
+- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled-comppnents with Emotion or use `tailwind.macro` with Emotion to add Tailwind CSS classes alongside your custom Emotion components styling.
+- **PostCSS**: Use the flexibilty of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
 ## 🧐 What's inside?
 
