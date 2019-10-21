@@ -15,7 +15,13 @@
   Tailwind + Emotion Gatsby Starter 
 </h1>
 
-Kick off your project with this bare-bones Tailwind CSS + Emotion starter for Gatsby. This starter ships with the packages and configuruation files you need to get hit the ground running on your next Tailwind CSS project.
+Kick off your project with this bare-bones Tailwind CSS + Emotion starter for Gatsby. This starter ships with the packages and configuration files you need to get hit the ground running on your next Tailwind CSS project.
+
+## 📝 Notes
+
+Andrew Welch wrote a terrific article about this setup over on his blog, ["Using Tailwind CSS with Gatsby, React & Emotion Styled Components"](https://nystudio107.com/blog/using-tailwind-css-with-gatsby-react-emotion-styled-components). The only difference between this starter and Andrew's writeup is I have not included [stylelint](https://stylelint.io) as of this release.
+
+If you prefer to use a [Gatsby Theme](https://www.gatsbyjs.org/docs/themes/what-are-gatsby-themes/) instead of a [Gatsby Starter](https://www.gatsbyjs.org/docs/starters/), Jordi Talens has an [excellent theme](https://github.com/talensjr/gatsby-theme-tailwindcss) that you can layer on with other Gatsby themes.
 
 ## 💄 Demo
 
@@ -51,9 +57,9 @@ You can see a demo of the frontend [over yonder](https://gatsby-tailwind-emotion
 
 This starter contains has the following features enabled by default:
 
-- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using the `tailwind.marco` to add Tailwind classes to your project.
-- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled-comppnents with Emotion or use `tailwind.macro` with Emotion to add Tailwind CSS classes alongside your custom Emotion components styling.
-- **PostCSS**: Use the flexibilty of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
+- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using `tailwind.marco` to add Tailwind classes to your project.
+- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled comppnents with Emotion or use `tailwind.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
+- **PostCSS**: Use the flexibility of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
 ## 🧐 What's inside?
 
@@ -82,11 +88,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3. **`.babelrc`**: This configuration file allows us to fine-tune [Babel's configurtion settings](https://babeljs.io/docs/en/configuration). In this starter we are adding the [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) preset to allow us to customize Babel as needed.
+3. **`.babelrc`**: This configuration file allows us to fine-tune [Babel's configuration settings](https://babeljs.io/docs/en/configuration). In this starter we are adding the [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) preset to allow us to customize Babel as needed.
 
 4.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-5. **`.prettierignore`**: This file allows us to specifiy files that we want to exclud from formatting with Prettier.
+5. **`.prettierignore`**: This file allows us to specifiy files that we want to exclude from formatting with Prettier.
 
 6.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
