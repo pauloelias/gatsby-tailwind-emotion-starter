@@ -58,7 +58,7 @@ You can see a demo of the frontend [over yonder](https://gatsby-tailwind-emotion
 This starter contains has the following features enabled by default:
 
 - **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using `tailwind.marco` to add Tailwind classes to your project.
-- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled comppnents with Emotion or use `tailwind.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
+- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled components with Emotion or use `tailwind.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
 - **PostCSS**: Use the flexibility of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
 ## 🧐 What's inside?
