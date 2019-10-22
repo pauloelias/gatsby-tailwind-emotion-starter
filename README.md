@@ -61,6 +61,75 @@ This starter contains has the following features enabled by default:
 - **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled components with Emotion or use `tailwind.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
 - **PostCSS**: Use the flexibility of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
+## 📦 Example components
+
+To use Tailwind CSS classes inside your components you use `tailwind.macro` package. You can use this package to process the Tailwind classes inside your components or you can create richer styled components using a combination of both Tailwind's classes and your own custom CSS with Emotion.
+
+### Standalone Tailwind Classes
+
+```js
+import tw from "tailwind.macro"
+import React from "react"
+
+const Heading = tw.h1`
+  text-2xl text-gray-500 uppercase
+`
+
+export default () => (
+  <div>
+    <Heading>Hello, world!</Heading>
+  </div>
+)
+```
+
+### Styled Components with Emotion
+
+```js
+import styled from '@emotion/styled';
+import tw from "tailwind.macro"
+import React from "react"
+
+import pattern from '../images/pattern.png';
+
+const Container = styled.div`
+    ${tw`bg-gray-100 w-full`}
+    background-image: url(${background});
+    padding: 15px;
+`;
+
+export default () => (
+  <Container>
+    <h1>Hello, world!</h1>
+  </Container>
+)
+```
+
+### Full Example
+
+```js
+import styled from '@emotion/styled';
+import tw from "tailwind.macro"
+import React from "react"
+
+import pattern from '../images/pattern.png';
+
+const Container = styled.div`
+    ${tw`bg-gray-100 w-full`}
+    background-image: url(${background});
+    padding: 15px;
+`;
+
+const Heading = tw.h1`
+  text-2xl text-gray-500 uppercase
+`
+
+export default () => (
+  <Container>
+    <Heading>Hello, world!</Heading>
+  </Container>
+)
+```
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
