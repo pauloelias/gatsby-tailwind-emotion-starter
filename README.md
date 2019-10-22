@@ -104,7 +104,7 @@ export default () => (
 )
 ```
 
-### Full Example
+### Combined Example
 
 ```js
 import styled from "@emotion/styled"
