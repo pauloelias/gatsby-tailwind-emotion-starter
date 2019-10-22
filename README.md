@@ -12,7 +12,7 @@
   </a>
 </p>
 <h1 align="center">
-  Tailwind + Emotion Gatsby Starter 
+  Tailwind + Emotion Gatsby Starter
 </h1>
 
 Kick off your project with this bare-bones Tailwind CSS + Emotion starter for Gatsby. This starter ships with the packages and configuration files you need to get hit the ground running on your next Tailwind CSS project.
@@ -61,6 +61,75 @@ This starter contains has the following features enabled by default:
 - **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled components with Emotion or use `tailwind.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
 - **PostCSS**: Use the flexibility of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
+## 📦 Example components
+
+To use Tailwind CSS classes inside of your components you use the `tailwind.macro` package. You can also create richer styled components using a combination of both Tailwind's classes and your own custom CSS with Emotion.
+
+### Standalone Tailwind Classes
+
+```js
+import tw from "tailwind.macro"
+import React from "react"
+
+const Heading = tw.h1`
+  text-2xl text-gray-500 uppercase
+`
+
+export default () => (
+  <div>
+    <Heading>Hello, world!</Heading>
+  </div>
+)
+```
+
+### Styled Components with Emotion
+
+```js
+import styled from "@emotion/styled"
+import tw from "tailwind.macro"
+import React from "react"
+
+import pattern from "../images/pattern.png"
+
+const Container = styled.div`
+    ${tw`bg-gray-100 w-full`}
+    background-image: url(${background});
+    padding: 15px;
+`
+
+export default () => (
+  <Container>
+    <h1>Hello, world!</h1>
+  </Container>
+)
+```
+
+### Combined Example
+
+```js
+import styled from "@emotion/styled"
+import tw from "tailwind.macro"
+import React from "react"
+
+import pattern from "../images/pattern.png"
+
+const Container = styled.div`
+    ${tw`bg-gray-100 w-full`}
+    background-image: url(${background});
+    padding: 15px;
+`
+
+const Heading = tw.h1`
+  text-2xl text-gray-500 uppercase
+`
+
+export default () => (
+  <Container>
+    <Heading>Hello, world!</Heading>
+  </Container>
+)
+```
+
 ## 🧐 What's inside?
 
 A quick look at the top-level files and directories you'll see in a Gatsby project.
@@ -88,25 +157,25 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3. **`.babelrc`**: This configuration file allows us to fine-tune [Babel's configuration settings](https://babeljs.io/docs/en/configuration). In this starter we are adding the [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) preset to allow us to customize Babel as needed.
+3.  **`.babelrc`**: This configuration file allows us to fine-tune [Babel's configuration settings](https://babeljs.io/docs/en/configuration). In this starter we are adding the [`babel-preset-gatsby`](https://github.com/gatsbyjs/gatsby/tree/master/packages/babel-preset-gatsby) preset to allow us to customize Babel as needed.
 
 4.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-5. **`.prettierignore`**: This file allows us to specifiy files that we want to exclude from formatting with Prettier.
+5.  **`.prettierignore`**: This file allows us to specifiy files that we want to exclude from formatting with Prettier.
 
 6.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-7. **`babel-plugin-macros.config.js`**: This file helps us configure Tailwind CSS macros to be used with [Emotion](https://emotion.sh), our CSS-in-JS tool of choice.
+7.  **`babel-plugin-macros.config.js`**: This file helps us configure Tailwind CSS macros to be used with [Emotion](https://emotion.sh), our CSS-in-JS tool of choice.
 
 8.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser. By default we are injecting Tailwind's [base styles](https://tailwindcss.com/docs/adding-base-styles/#app) into the browser.
 
 9.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-19.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+10. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-11.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+11. **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-12.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+12. **`LICENSE`**: Gatsby is licensed under the MIT license.
 
 13. **`package-lock.json`**: (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
