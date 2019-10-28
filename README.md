@@ -104,7 +104,7 @@ export default () => (
 )
 ```
 
-### Combined Example
+### Combined Standalone + Styled Components Example
 
 ```js
 import styled from "@emotion/styled"
@@ -127,6 +127,25 @@ export default () => (
   <Container>
     <Heading>Hello, world!</Heading>
   </Container>
+)
+```
+
+### CSS Prop to inline Tailwind Classes
+
+```js
+import tw from "tailwind.macro"
+import { css } from "@emotion/core"
+import React from "react"
+
+export default () => (
+  <div
+    css={css`
+      ${tw`flex items-center justify-between px-4 py-3`}
+    `}
+  >
+    <h1>Hello, world!</h1>
+    <h2>I'm a flex item too!</h2>
+  </div>
 )
 ```
 
