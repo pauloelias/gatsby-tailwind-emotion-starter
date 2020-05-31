@@ -57,18 +57,18 @@ You can see a demo of the frontend [over yonder](https://gatsby-tailwind-emotion
 
 This starter contains has the following features enabled by default:
 
-- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using `tailwind.marco` to add Tailwind classes to your project.
-- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled components with Emotion or use `tailwind.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
+- **Tailwind CSS**: The full power of Tailwind is at your fingertips. Style your components using [twin.macro](https://github.com/ben-rogerson/twin.macro) to add Tailwind classes to your project.
+- **Emotion**: Best-in-class CSS-in-JS support with [Emotion](https://emotion.sh). Write your own custom styled components with Emotion or use `twin.macro` inside your styled components to add Tailwind CSS classes alongside your custom styling.
 - **PostCSS**: Use the flexibility of [PostCSS](https://postcss.org/) to extend Tailwind's CSS or write your own CSS. [Postcss-Preset-Env](https://preset-env.cssdb.org/) is enabled out-of-the box allowing you to write tomorrow's CSS today!
 
 ## 📦 Example components
 
-To use Tailwind CSS classes inside of your components you use the `tailwind.macro` package. You can also create richer styled components using a combination of both Tailwind's classes and your own custom CSS with Emotion.
+To use Tailwind CSS classes inside of your components you use the `twin.macro` package. You can also create richer styled components using a combination of both Tailwind's classes and your own custom CSS with Emotion.
 
 ### Standalone Tailwind Classes
 
 ```js
-import tw from "tailwind.macro"
+import tw from "twin.macro"
 import React from "react"
 
 const Heading = tw.h1`
@@ -85,8 +85,7 @@ export default () => (
 ### Styled Components with Emotion
 
 ```js
-import styled from "@emotion/styled"
-import tw from "tailwind.macro"
+import tw, { styled } from "twin.macro"
 import React from "react"
 
 import pattern from "../images/pattern.png"
@@ -107,8 +106,7 @@ export default () => (
 ### Combined Standalone + Styled Components Example
 
 ```js
-import styled from "@emotion/styled"
-import tw from "tailwind.macro"
+import tw, { styled } from "twin.macro"
 import React from "react"
 
 import pattern from "../images/pattern.png"
@@ -133,8 +131,7 @@ export default () => (
 ### CSS Prop to inline Tailwind Classes
 
 ```js
-import tw from "tailwind.macro"
-import { css } from "@emotion/core"
+import tw, { css } from "twin.macro"
 import React from "react"
 
 export default () => (

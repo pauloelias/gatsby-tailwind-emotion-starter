@@ -1,4 +1,4 @@
-import tw from "tailwind.macro"
+import tw from "twin.macro"
 import React from "react"
 import SEO from "../components/seo"
 
@@ -69,7 +69,7 @@ export default () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SmallIcon src={github} alt="Githib Icon" />
+          <SmallIcon src={github} alt="Github Icon" />
         </a>
       </Footer>
     </Main>
