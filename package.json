@@ -1,7 +1,7 @@
 {
   "name": "@pauloelias/gatsby-tailwind-emotion-starter",
   "description": "A bare-bones Tailwind CSS + Emotion starter for Gatsby",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -12,24 +12,24 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
-    "@emotion/core": "^10.0.28",
+    "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
-    "gatsby": "^2.23.1",
-    "gatsby-plugin-emotion": "^4.3.3",
-    "gatsby-plugin-postcss": "^2.3.3",
-    "gatsby-plugin-react-helmet": "^3.3.3",
+    "gatsby": "^2.24.64",
+    "gatsby-plugin-emotion": "^4.3.11",
+    "gatsby-plugin-postcss": "^2.3.12",
+    "gatsby-plugin-react-helmet": "^3.3.11",
     "postcss-import": "^12.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "babel-preset-gatsby": "^0.2.26",
+    "babel-preset-gatsby": "^0.2.36",
     "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.0.5",
-    "tailwindcss": "^1.1.6",
-    "twin.macro": "^1.3.0"
+    "prettier": "^2.1.2",
+    "tailwindcss": "^1.8.10",
+    "twin.macro": "^1.9.0"
   },
   "repository": {
     "type": "git",
