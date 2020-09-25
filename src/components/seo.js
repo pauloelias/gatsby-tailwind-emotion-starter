@@ -1,4 +1,4 @@
-// This is taken directly from the official gatsby-starter-default
+// This is adapted directly from the official gatsby-starter-default
 // https://github.com/gatsbyjs/gatsby-starter-default
 import React from "react"
 import PropTypes from "prop-types"
