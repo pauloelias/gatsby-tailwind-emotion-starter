@@ -212,3 +212,12 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 ## 💫 Deploy
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/pauloelias/gatsby-tailwind-emotion-starter)
+
+## 📚 Learn More About Gatsby
+
+To learn more about Gatsby, use the following resources:
+
+- [Gatsby Documentation](https://www.gatsbyjs.com/docs/) - learn about Gatsby's features and API.
+- [Gatsby Tutorial](https://www.gatsbyjs.com/tutorial/) - a lovely Gatsby tutorial.
+
+You can check out [the Gatsby GitHub repository](https://github.com/gatsbyjs/gatsby) - your feedback and contributions are welcome!
