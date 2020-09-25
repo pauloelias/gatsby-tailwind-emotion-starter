@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "Arthie.vscode-tailwindcssinjs",
+    "bradlc.vscode-tailwindcss",
+    "DennisVash.twin-macro-autocomplete-vscode",
+    "stylelint.vscode-stylelint"
+  ]
+}
