@@ -1,35 +1,20 @@
 {
   "name": "@pauloelias/gatsby-tailwind-emotion-starter",
-  "description": "A bare-bones Tailwind CSS + Emotion starter for Gatsby",
-  "version": "2.2.0",
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
-  },
-  "dependencies": {
-    "@emotion/core": "^10.0.35",
-    "@emotion/styled": "^10.0.27",
-    "gatsby": "^2.24.64",
-    "gatsby-plugin-emotion": "^4.3.11",
-    "gatsby-plugin-postcss": "^2.3.12",
-    "gatsby-plugin-react-helmet": "^3.3.11",
-    "postcss-import": "^12.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
-  },
-  "devDependencies": {
-    "babel-preset-gatsby": "^0.2.36",
-    "postcss-preset-env": "^6.7.0",
-    "prettier": "^2.1.2",
-    "tailwindcss": "^1.8.10",
-    "twin.macro": "^1.9.0"
+  "version": "2.2.1",
+  "description": "A Tailwind CSS + Emotion starter for Gatsby",
+  "keywords": [
+    "gatsby",
+    "tailwind",
+    "emotion",
+    "starter",
+    "react",
+    "css-in-js"
+  ],
+  "author": {
+    "email": "paulo@pauloelias.com",
+    "name": "Paulo Elias",
+    "url": "https://www.pauloelias.com/",
+    "twitter": "@pauloelias"
   },
   "repository": {
     "type": "git",
@@ -37,5 +22,41 @@
   },
   "bugs": {
     "url": "https://github.com/pauloelias/gatsby-tailwind-emotion-starter/issues"
+  },
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": ">=10.13"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "rimraf .cache public",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "gatsby": "^2.24.65",
+    "gatsby-plugin-emotion": "^4.3.11",
+    "gatsby-plugin-postcss": "^2.3.12",
+    "gatsby-plugin-react-helmet": "^3.3.11",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "twin.macro": "^1.10.0"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
+    "babel-preset-gatsby": "^0.5.10",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
+    "stylelint-config-recommended": "^3.0.0",
+    "tailwindcss": "^1.8.10"
   }
 }

@@ -1,7 +1,9 @@
 module.exports = {
-  tailwind: {
-    styled: "@emotion/styled",
-    config: "./tailwind.config.js",
-    format: "auto",
+  twin: {
+    config: "tailwind.config.js",
+    preset: "emotion",
+    debugProp: true,
+    debugPlugins: false,
+    debug: false,
   },
 }

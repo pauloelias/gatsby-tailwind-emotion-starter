@@ -1,6 +1,8 @@
 import tw from "twin.macro"
 import React from "react"
+
 import SEO from "../components/seo"
+import Layout from "../components/layout"
 
 import github from "../images/github.svg"
 
@@ -51,27 +53,37 @@ const SmallIcon = tw.img`
   inline-block h-6
 `
 
-export default () => (
-  <Wrapper>
-    <SEO title="Welcome" />
-    <Main>
-      <Logos>
-        {logos &&
-          logos.map(({ name, logo }, index) => (
-            <Icon src={logo} alt={`${name} Logo`} key={index} />
-          ))}
-      </Logos>
-      <Heading>Hello, world!</Heading>
-      <Text>Welcome to the Gatsby Tailwind CSS + Emotion Starter.</Text>
-      <Footer>
-        <a
-          href="https://github.com/pauloelias/gatsby-tailwind-emotion-starter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <SmallIcon src={github} alt="Github Icon" />
-        </a>
-      </Footer>
-    </Main>
-  </Wrapper>
-)
+export default function Index() {
+  return (
+    <Layout>
+      <Wrapper>
+        <SEO title="Welcome" />
+        <Main>
+          <Logos>
+            {logos &&
+              logos.map(({ name, logo }, index) => (
+                <Icon src={logo} alt={`${name} Logo`} key={index} />
+              ))}
+          </Logos>
+          <Heading>Hello, world!</Heading>
+          <Text>
+            Welcome to the Tailwind CSS{" "}
+            <span role="img" aria-label="and">
+              ➕
+            </span>{" "}
+            Emotion Starter for Gatsby.
+          </Text>
+          <Footer>
+            <a
+              href="https://github.com/pauloelias/gatsby-tailwind-emotion-starter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SmallIcon src={github} alt="Github Icon" />
+            </a>
+          </Footer>
+        </Main>
+      </Wrapper>
+    </Layout>
+  )
+}

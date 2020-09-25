@@ -62,8 +62,11 @@ public
 .DS_Store
 
 # Yarn
+yarn.lock
 yarn-error.log
 .pnp/
 .pnp.js
-# Yarn Integrity file
 .yarn-integrity
+
+# NPM
+package-lock.json
