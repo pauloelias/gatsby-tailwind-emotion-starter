@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "@emotion/core": "^10.0.35",
-    "@emotion/styled": "^10.0.27",
+    "@emotion/styled-base": "^10.0.27",
     "gatsby": "^2.24.65",
     "gatsby-plugin-emotion": "^4.3.11",
     "gatsby-plugin-postcss": "^2.3.12",
